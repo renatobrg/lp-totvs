@@ -1,0 +1,64 @@
+/* === MOTORES WEB === */
+
+=flexbox
+	display: -webkit-box
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flexbox
+	display: flex
+
+=transition($transition)
+	-webkit-transition: all $transition linear
+	-moz-transition: all $transition linear
+	-ms-transition: all $transition linear
+	-o-transition: all $transition linear
+	transition: all $transition linear
+
+=transform($transforms)
+	-webkit-transform: $transforms
+	-moz-transform: $transforms
+	-ms-transform: $transforms
+	-o-transform: $transforms
+	transform: $transforms
+
+=border-radius($radius)
+	-webkit-border-radius: $radius
+	-moz-border-radius: $radius
+	-ms-border-radius: $radius
+	-o-border-radius: $radius
+	border-radius: $radius
+
+=box-shadow($top, $left, $blur, $size, $color, $inset: false)
+    @if $inset
+        -webkit-box-shadow:inset $top $left $blur $size $color
+        -moz-box-shadow:inset $top $left $blur $size $color
+        box-shadow:inset $top $left $blur $size $color
+    @else
+        -webkit-box-shadow: $top $left $blur $size $color
+        -moz-box-shadow: $top $left $blur $size $color
+        box-shadow: $top $left $blur $size $color
+
+=placeholder($place)
+  -webkit-input-placeholder: $place
+  -moz-placeholder: $place
+  -moz-placeholder: $place
+  -ms-input-placeholder: $place
+
+=opacity($opacity)
+	opacity: $opacity
+	$opacity-ie: $opacity * 100
+	filter: alpha(opacity=$opacity-ie)
+
+=blur($filter)
+	-webkit-filter: blur($filter)
+    -moz-filter: blur($filter)
+    -o-filter: blur($filter)
+    -ms-filter: blur($filter)
+    filter: blur($filter)
+
+=grayscale($scale)
+	-webkit-filter: grayscale($scale)
+    -moz-filter: grayscale($scale)
+    -o-filter: grayscale($scale)
+    -ms-filter: grayscale($scale)
+    filter: grayscale($scale)

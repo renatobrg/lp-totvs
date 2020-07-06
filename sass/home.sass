@@ -1,0 +1,302 @@
+@import fonts
+@import global
+@import mixins
+@import motors
+@import responsive
+
+
+main
+    background-image: url('../imgs/bg-topo-med.jpg')
+    background-size: cover
+    position: relative
+    padding: 100px 150px
+    height: 100vh
+
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: flex-start
+
+    .main-content
+        flex-basis: 50%
+
+        &__logo
+            display: block
+            width: 230px
+            height: 75px
+
+            img
+                width: auto
+                height: 100%
+        
+        &__title
+            margin-top: 150px
+        
+        &__text
+            padding: 30px 0px
+            font-size: 30px
+            line-height: 40px
+            color: $white
+        
+        &__cta
+            color: $secondary
+            font-size: 30px
+            font-weight: $exbold
+            text-transform: uppercase
+            margin-top: 50px
+
+            span
+                display: inline-block
+                margin-left: 5px
+                width: 25px
+                height: 25px
+
+                img
+                    width: 100%
+        
+        .boxes
+            display: flex
+            flex-direction: row
+            justify-content: flex-start
+
+            .box
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                margin-right: 30px
+
+                &__icon
+                    width: 70px
+                    height: 70px
+                    margin-left: 15px
+
+                    img
+                        width: 100%
+                        height: auto
+                
+                &__text
+                    padding-top: 10px
+                    text-transform: uppercase
+                    font-size: 25px
+                    color: $white
+
+                    span
+                        display: block
+
+    .main-form
+            flex-basis: 35%
+            height: 90vh
+            background-color: $primary
+            padding: 30px
+            +border-radius(30px)
+
+            &__title
+                color: $white
+                font-weight: $exbold
+                font-size: 35px
+                text-align: center
+                text-transform: uppercase
+            
+            &__text
+                color: $black
+                font-size: 18px
+                text-align: center
+            
+            small
+                display: block
+                color: $black
+                text-align: center
+
+
+.modulo
+    padding: 100px 150px
+    background-image: linear-gradient( 120grad, $primary 20%, $light 15%)
+    display: flex
+    flex-direction: row
+    justify-content: flex-start
+
+    .photo
+        flex-basis: 25%
+
+        figure
+            width: 350px
+            height: 350px
+            overflow: hidden
+            +border-radius(50%)
+
+            img
+                width: auto
+                height: 100%
+    
+    .content
+        flex-basis: 70%
+        padding-top: 30px
+
+        &__title
+            color: $primary
+        
+        &__text
+            font-size: 30px
+            line-height: 40px
+            color: $dark
+
+
+.assuntos
+    padding: 100px 0px 300px
+    background-color: $white
+    background-image: url('../imgs/bg-abstract.png')
+    background-repeat: no-repeat
+    background-size: cover
+
+    &__title
+        padding: 0px 150px 50px
+
+    .boxes
+        clip-path: polygon(5% 0,100% 0,100% 70%,95% 100%,0 100%,0 30%)
+        background-color: $light
+        padding: 50px 150px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+
+        .box
+            flex-basis: 45%
+            padding: 30px 100px
+            background-color: $white
+            text-align: center
+            +border-radius(15px)
+            +transition(.2s)
+
+            &:hover
+                +box-shadow(0px, 0px, 20px, 0px, $grey, false)
+
+            &__date
+                color: $primary
+                font-size: 35px
+                font-weight: $exbold
+                margin-bottom: 15px
+
+            &__day-hour
+                color: $grey
+                font-size: 25px
+                font-weight: $exbold
+                text-transform: uppercase
+
+            &__title
+                margin: 45px 0px
+                color: $dark
+                font-size: 38px
+                font-weight: $exbold
+                line-height: 48px
+
+                span
+                    color: $primary
+            
+            .about
+                margin: 35px 0px
+                padding: 35px 0px
+                border-top: 5px solid $light
+                border-bottom: 5px solid $light
+
+                &__title
+                    text-transform: uppercase
+                    font-size: 25px
+                    font-weight: $exbold
+                    color: $primary
+                    margin-bottom: 15px
+                
+                &__text
+                    font-size: 20px
+                    line-height: 30px
+                    color: $dark
+            
+            .speakers
+
+                &__name
+                    text-transform: uppercase
+                    font-size: 25px
+                    font-weight: $exbold
+                    color: $primary
+                
+                &__office
+                    font-size: 20px
+                    line-height: 30px
+                    color: $dark
+                    margin-bottom: 20px
+
+
+.palestrantes
+    margin-top: -200px
+    padding: 100px 150px
+
+    &__title
+        margin: 0px 0px 50px
+
+    .profiles
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+
+        .profile
+            flex-basis: 20%
+            text-align: center
+
+            &__photo
+                width: 250px
+                height: 250px
+                margin: 0px auto
+                overflow: hidden
+                +border-radius(50%)
+
+                img
+                    width: auto
+                    height: 100%
+
+            &__title
+                text-transform: uppercase
+                font-size: 25px
+                font-weight: $exbold
+                color: $primary
+                margin-top: 30px
+
+            &__office
+                font-size: 25px
+                font-weight: $exbold
+                color: $dark
+                margin-bottom: 15px
+
+            &__text
+                font-size: 25px
+                font-weight: $regular
+                line-height: 35px
+                color: $dark
+
+
+.footer-cta
+    background-color: $light
+
+    .wrapper
+        padding: 100px 150px
+        clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+        background-color: $primary
+        text-align: center
+
+        &__title
+            color: $white
+            margin-bottom: 30px
+
+
+.main-footer
+    padding: 50px 0px
+    background-color: $dark
+    text-align: center
+
+    &__logo
+        display: block
+        width: 230px
+        height: 75px
+        margin: 0 auto
+
+        img
+            width: auto
+            height: 100%

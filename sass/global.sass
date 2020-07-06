@@ -1,0 +1,42 @@
+@import responsive
+@import mixins
+@import motors
+
+
+/*GLOBALS*/
+.show-desk
+    display: block
+
+    @media (max-width: $tablet-small)
+        display: none
+
+.show-mobile
+    display: none
+    
+    @media (max-width: $tablet-small)
+        display: block
+
+
+/*BUTTONS*/
+.btn-primary, .btn-secondary
+    display: inline-block
+    width: 300px
+    height: auto
+    padding: 20px
+    text-align: center
+    text-transform: uppercase
+    font-weight: $bold
+    font-size: 30px
+    +border-radius(40px)
+    +transition(.2s)
+
+    &:hover
+        +box-shadow(5px, 5px, 10px, 0px, $dark, false)
+
+.btn-primary
+    background-color: $primary
+    color: $white
+
+.btn-secondary
+    background-color: $white
+    color: $primary
