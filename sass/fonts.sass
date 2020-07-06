@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap")
 @import mixins
+@import responsive
 
 
 h1, h2, h3, h4, p
@@ -16,6 +17,23 @@ h1
     strong
         font-weight: $regular
 
+    @media (max-width: $laptop-large)
+        font-size: 50px
+        line-height: 60px
+    
+    @media (max-width: $laptop-medium)
+        font-size: 45px
+        line-height: 55px
+    
+    @media (max-width: $tablet-large)
+        font-size: 40px
+        line-height: 50px
+    
+    @media (max-width: $tablet-small)
+        font-size: 35px
+        line-height: 45px
+    
+
 h2
     font-size: 55px
     font-weight: $exbold
@@ -24,3 +42,12 @@ h2
 
     span
         color: $primary
+
+    @media (max-width: $laptop-large)
+        font-size: 40px
+    
+    @media (max-width: $laptop-medium)
+        font-size: 35px
+    
+    @media (max-width: $tablet-large)
+        font-size: 30px
