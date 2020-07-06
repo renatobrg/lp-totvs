@@ -210,17 +210,18 @@ main
                     margin-top: 30px
 
                     .hs-form
-                        // fieldset
-                        //     width: 100% 
-
-                        //     .hs_firstname.hs-firstname.hs-fieldtype-text.field.hs-form-field
-                        //         width: 100% 
 
                         .hs-form-field
                             .hs-error-msgs
                                 .hs-error-msg
                                     font-size: 14px
                                     color: $white
+                            
+                            .hs-form-required
+                                color: white
+                                display: block
+                                height: 10px
+                                margin-top: 10px
 
                         .hs-input
                             padding: 15px
@@ -265,9 +266,14 @@ main
                         
                         .hs_faixa_de_faturamento_clone_
                             margin-top: 15px
+                            color: $white
                         
                             .inputs-list
                                 margin-top: 15px
+                                color: $white
+                            
+                            .hs-form-required
+                                display: none
 
 
 .modulo
@@ -628,7 +634,7 @@ main
 
     .wrapper
         padding: 100px 150px
-        clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+        clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%)
         background-color: $primary
         text-align: center
 
