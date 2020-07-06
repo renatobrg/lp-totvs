@@ -34,6 +34,9 @@ main
     
     @media (max-width: $tablet-small)
         padding: 100px 30px
+    
+    @media (max-width: $mobile-large)
+        padding: 50px 30px
 
     .main-content
         flex-basis: 50%
@@ -45,7 +48,7 @@ main
         &__logo
             display: block
             width: auto
-            height: 75px
+            height: 65px
 
             img
                 width: auto
@@ -56,6 +59,9 @@ main
             
             @media (max-width: $tablet-small)
                 height: 60px
+            
+            @media (max-width: $mobile-large)
+                height: 50px
 
         &__title
             margin-top: 150px
@@ -183,6 +189,10 @@ main
         
         @media (max-width: $tablet-small)
             margin-top: 20px
+        
+        @media (max-width: $mobile-large)
+            width: 100%
+            padding: 15px
 
         &__title
             color: $white
@@ -210,6 +220,7 @@ main
                     margin-top: 30px
 
                     .hs-form
+                        width: 100%
 
                         .hs-form-field
                             .hs-error-msgs
@@ -222,6 +233,19 @@ main
                                 display: block
                                 height: 10px
                                 margin-top: 10px
+                            
+                            @media (max-width: $mobile-large)
+                                .input
+                                    margin-right: 0px
+                                
+                                    .hs-input
+                                        width: 100%
+                                    
+                                    .hs-input[type=radio]
+                                        width: 10%
+                                        height: 20px
+                                        margin-left: 0px
+                                        margin-bottom: 5px
 
                         .hs-input
                             padding: 15px
@@ -299,6 +323,9 @@ main
     
     @media (max-width: $tablet-small)
         padding: 100px 30px
+    
+    @media (max-width: $mobile-large)
+        padding: 50px 30px
 
     .photo
         flex-basis: 25%
@@ -321,8 +348,12 @@ main
                 height: 300px
             
             @media (max-width: $tablet-large)
-                width: 300px
-                height: 300px
+                width: 250px
+                height: 250px
+            
+            @media (max-width: $mobile-large)
+                width: 200px
+                height: 200px
 
     
     .content
@@ -349,6 +380,11 @@ main
             @media (max-width: $laptop-medium)
                 font-size: 20px
                 line-height: 30px
+                margin-top: 15px
+            
+            @media (max-width: $mobile-large)
+                font-size: 16px
+                line-height: 26px
 
 
 .assuntos
@@ -373,7 +409,7 @@ main
         background-position: -1000px 0px
     
     @media (max-width: $tablet-small)
-        padding: 50px 0px
+        padding: 50px 0px 0px
 
     &__title
         padding: 0px 150px 50px
@@ -393,6 +429,9 @@ main
         
         @media (max-width: $tablet-small)
             padding: 50px 30px
+        
+        @media (max-width: $mobile-large)
+            padding: 0px 30px 50px
 
     .boxes
         clip-path: polygon(5% 0,100% 0,100% 70%,95% 100%,0 100%,0 30%)
@@ -420,6 +459,9 @@ main
         @media (max-width: $tablet-small)
             padding: 50px 30px
             clip-path: polygon(5% 0,100% 0,100% 95%,95% 100%,0 100%,0 5%)
+        
+        @media (max-width: $mobile-large)
+            padding: 50px 30px 0px
 
         .box
             flex-basis: 45%
@@ -439,6 +481,9 @@ main
             @media (max-width: $tablet-large)
                 flex-basis: 100%
                 margin-bottom: 50px
+            
+            @media (max-width: $mobile-large)
+                padding: 30px 20px
 
             &:hover
                 +box-shadow(0px, 0px, 20px, 0px, $grey, false)
@@ -507,6 +552,10 @@ main
                     @media (max-width: $laptop-medium)
                         font-size: 18px
                         line-height: 28px
+                    
+                    @media (max-width: $mobile-large)
+                        font-size: 16px
+                        line-height: 26px
             
             .speakers
 
@@ -657,13 +706,18 @@ main
 
     &__logo
         display: block
-        margin: 0px auto
         width: auto
-        height: 75px
+        height: 65px
 
         img
             width: auto
             height: 100%
         
+        @media (max-width: $tablet-large)
+            margin: 0px auto
+        
         @media (max-width: $tablet-small)
             height: 60px
+        
+        @media (max-width: $mobile-large)
+            height: 40px
