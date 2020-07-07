@@ -27,4 +27,4 @@ Para a construção do projeto usei HTML5 e web semântica. CSS3 e suas principa
 
 ### Projeto
 
-O projeto está em [LP-Totvs](https://github.com/renatobrg/)
+O projeto está em [LP-Totvs](https://renatobrg.github.io/lp-totvs/)
